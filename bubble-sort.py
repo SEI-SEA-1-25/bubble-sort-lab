@@ -1,5 +1,8 @@
 def bubble_sort(arr):
-  pass # Delete this line and replace it with your implementation.
+  for i in range(len(arr) - 1):
+    for j in range(len(arr) - 1 - i):
+        if arr[j] > arr[j + 1]:
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 nums = [5, 3, 8, 6]
 bubble_sort(nums)
